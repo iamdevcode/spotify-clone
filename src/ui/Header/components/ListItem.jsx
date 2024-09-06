@@ -2,7 +2,7 @@
 import { SvgIconPlay } from '#/svg/icons'
 import Image from 'next/image'
 
-export const ListItem = ({ name, image, href }) => (
+export const ListItem = ({ name, image }) => (
   <div className="group flex items-center rounded-md gap-x-4 bg-neutral-100/10 hover:bg-neutral-100/20 hover:cursor-pointer pr-4 transition-all duration-300">
     <Image
       quality="100"

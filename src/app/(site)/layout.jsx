@@ -1,5 +1,6 @@
 import '#/styles/globals.css'
 import { AppProvider } from '@/context/app'
+import { SupabaseProvider } from '@/context/supabase'
 import { Sidebar } from '@/ui/Sidebar'
 import clsx from 'clsx'
 import { Figtree } from 'next/font/google'
@@ -16,13 +17,15 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={clsx('bg-black', font.className)}>
-        <AppProvider>
-          <main className="flex p-2 h-screen">
-            <Sidebar />
-            {children}
-          </main>
-          <Toaster richColors visibleToasts={1} />
-        </AppProvider>
+        <SupabaseProvider>
+          <AppProvider>
+            <main className="flex p-2 h-screen">
+              <Sidebar />
+              {children}
+            </main>
+            <Toaster richColors visibleToasts={1} />
+          </AppProvider>
+        </SupabaseProvider>
       </body>
     </html>
   )

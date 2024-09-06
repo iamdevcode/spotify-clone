@@ -135,7 +135,7 @@ export const SvgIconPlay = props => (
   >
     <path stroke="none" d="M0 0h24v24H0z" />
     <path
-      fill="currentColor"
+      fill="#fff"
       stroke="none"
       d="M6 4v16a1 1 0 0 0 1.52.85l13-8a1 1 0 0 0 0-1.7l-13-8A1 1 0 0 0 6 4z"
     />

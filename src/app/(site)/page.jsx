@@ -1,3 +1,4 @@
+'use client'
 import images from '#/images'
 import { Header } from '@/ui/Header'
 import { ListItem } from '@/ui/Header/components/ListItem'
